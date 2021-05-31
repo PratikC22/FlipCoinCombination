@@ -15,14 +15,14 @@ declare -A Results
 
 for (( i=1; i<=$limit; i++ ));
 do
-	random=$(( RANDOM%2 ));
+	random=$((RANDOM%2));
 
 	if [ $random -eq 0 ];
 	then
-		Heads=$(( $Heads + 1 ));
+		Heads=$(($Heads+1));
 		Results["Heads"]=$Heads		#Storing result in dictionary
 	else
-		Tails=$(( $Tails + 1 ));
+		Tails=$(($Tails+1));
 		Results["Tails"]=$Tails		#Storing result in dictionary
 	fi
 done
