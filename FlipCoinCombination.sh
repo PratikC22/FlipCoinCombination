@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-echo "Welcome to flip coin simulation : "
+echo "Welcome to flip coin combination : "
 sleep 1
 
 #Generating a random number.
